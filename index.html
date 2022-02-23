@@ -4,32 +4,116 @@
     <title>This is the title of the webpage!</title>
   </head>
   <style>
+    .course_list {
+      list-style: none;
+      margin-left: 10em;
+      margin-right: 10em;
+      padding-left: 0%;
+
+    }
+    
+    .course_card {
+      display: flex;
+      border-bottom: 1px solid #808080;
+      padding: 1em;
+    }
+
+    .course_image {
+      width: 150px;
+      height: 150px;
+      vertical-align: middle;
+    }
+
+    .course_info {
+      margin-left: 1em;
+    }
+
     .course_name {
       color: #002145;
       font-size: large;
     }
 
-    .course_image {
-      width: min-content;
-      height: min-content;
-    }
-
     .school_name {
       color: #0055B7;
-      font-size: medium;
+      font-size: small;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
-    .course_info {
+    .instructor {
+      color: #808080;
+      font-size: small;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .difficulty {
+      color: #808080;
+      font-size: smaller;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+
+    .course_detail {
       color: #808080;
       font-size: small;
     }
   </style>
   <body>
-    <div>
-    <h1 class="course_name">Course Name</h1>
-    <img class="course_image" src="https://images.unsplash.com/photo-1644193808951-f218ccf1c53c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Course picture">
-    <h2 class="school_name">School Name</h2>
-    <p class="course_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat, nulla molestie auctor imperdiet, ligula eros dictum nisi, ac semper nunc nulla a lectus. Sed blandit, erat posuere tincidunt rutrum, dui ipsum dignissim neque, at faucibus nulla est a lectus.</p>
-    </div>
+    <ul class="course_list">
+      <li class="course_item">
+        <div class="course_card">
+          <img class="course_image" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/77/17ca30e9cf11e8931fddf70eb768e1/pythonfluency_1x1_course_1.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="Course picture">
+          <div class="course_info">
+            <h1 class="course_name">Python Basics</h1>
+            <h3 class="school_name">University of Michigan</h3>
+            <h3 class="instructor">Paul Resnick, Steve Oney, and Jaclyn Cohen</h3>
+            <h3 class="difficulty">Beginner</h3>
+            <p class="course_detail">This course introduces the basics of Python 3, including conditional execution and iteration as control structures, and strings and lists as data structures. You'll program an on-screen Turtle to draw pretty pictures. You'll also learn to draw reference diagrams as a way to reason about program executions, which will help to build up your debugging skills. The course has no prerequisites. It will cover Chapters 1-9 of the textbook "Fundamentals of Python Programming," which is the accompanying text (optional and free) for this course. The course is for you if you're a newcomer to Python programming, if you need a refresher on Python basics, or if you may have had some exposure to Python programming but want a more in-depth exposition and vocabulary for describing and reasoning about programs. This is the first of five courses in the Python 3 Programming Specialization.</p>
+          </div>
+        </div>
+      </li>
+      <li class="course_item">
+        <div class="course_card">
+          <img class="course_image" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/a9/b7e2c6811a47f494a9360676f3f39b/590.png?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF">
+          <div class="course_info">
+            <h1 class="course_name">Introduction to Python Programming</h1>
+            <h3 class="school_name">University of Pennsylnavia</h3>
+            <h3 class="instructor">Brandon Krakowsky</h3>
+            <h3 class="difficulty">Beginner</h3>
+            <p class="course_detail">This course provides an introduction to programming and the Python language.  Students are introduced to core programming concepts like data structures, conditionals, loops, variables, and functions.  This course includes an overview of the various tools available for writing and running Python, and gets students coding quickly.  It also provides hands-on coding exercises using commonly used data structures, writing custom functions, and reading and writing to files. This course may be more robust than some other introductory python courses, as it delves deeper into certain essential programming topics.</p>
+          </div>
+        </div>
+      </li>
+      <li class="course_item">
+        <div class="course_card">
+          <img class="course_image" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/d0/a5ef80dc2011e89bcda9b89149e681/Capture.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="Course picture">
+          <div class="course_info">
+            <h1 class="course_name">Python and Statistics for Financial Analysis</h1>
+            <h3 class="school_name">The Hong Kong University of Science and Technology</h3>
+            <h3 class="instructor">Xuhu Wan</h3>
+            <h3 class="difficulty">Intermediate</h3>
+            <p class="course_detail">Course Overview: https://youtu.be/JgFV5qzAYno <br>
+
+              Python is now becoming the number 1 programming language for data science. Due to python's simplicity and high readability, it is gaining its importance in the financial industry.  The course combines both python coding and statistical concepts and applies into analyzing financial data, such as stock data. <br>
+              
+              By the end of the course, you can achieve the following using python: <br>
+              
+              - Import, pre-process, save and visualize financial data into pandas Dataframe <br>
+              
+              - Manipulate the existing financial data by generating new variables using multiple columns <br>
+              
+              - Recall and apply the important statistical concepts (random variable, frequency, distribution, population and sample, confidence interval, linear regression, etc. ) into financial contexts <br>
+              
+              - Build a trading model using multiple linear regression model <br>
+              
+              - Evaluate the performance of the trading model using different investment indicators <br>
+              
+              Jupyter Notebook environment is configured in the course platform for practicing python coding without installing any client applications.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </body>
 </html>
